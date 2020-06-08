@@ -4,16 +4,29 @@
 const arr = [7, 8, 15, 14, 13, 70, 44, 35, 88, 77, false, "7", "hi", null]
 
 const multOf7 = el => {
-  // TODO: Check if el is a multOf7
+  if (el % 7 === 0) {
+    return el;
+  };
 }
 
 // Challenge: Implement the filter method below!
-// Array.prototype.filter = function(fun) {
-//   // this contains the value of the Array
-//   const arr = this
-//   // TODO: Using the passed in fun, apply to all elements
-//   // to array to determine to keep or not
-// }
+
+//Note: lines 20 - 22 are just to ensure false doesn't break my calcs. Not sure the proper way to implement this since the real filter does not allow this
+Array.prototype.filter = function(fun) {
+  const arr = this;
+  let newArr = [];
+  let x;
+  for (let item of arr) {
+    if (item == false) {
+      item = 1
+    }
+    x = fun(item)
+    if (x !== undefined && x !== null) {
+      newArr.push(x)
+    }
+  };
+  return newArr;
+}
 
 const newArr = arr.filter(multOf7)
 
