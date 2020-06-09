@@ -3,5 +3,17 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
-  return false;
+  const keys = Object.keys(obj);
+  for (let key of keys) {
+    if (typeof(obj[key]) == 'object') {
+      if ((!hasFalsyValue(obj[key]) && obj[key].length > 0) || (obj[key].length == 0 && !obj[key])) {
+        return false;
+      };
+    } else if (!obj[key]) {
+      return false;
+    };
+  };
+  return true;
 };
+
+console.log(hasFalsyValue({x:true, y:{a: true, b:false}, z:true}));

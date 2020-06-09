@@ -5,8 +5,7 @@
 const arr = [0, 1, 2, 3, 4]
 
 // Note: acc stands for accumulator, cur stands for current
-const sum = (acc, cur) => {}
-
+const sum = (acc, cur) => acc + cur
 // // Challenge: Implement the reduce method below!
 // Array.prototype.reduce = function(fun, initValue) {
 //   // this contains the value of the Array
