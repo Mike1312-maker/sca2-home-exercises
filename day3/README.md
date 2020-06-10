@@ -6,9 +6,6 @@
 
 Ahh... The internet.
 
-> ![The Internet](./surfingtheinternet.gif)
->
-> Look at them all having fun! Rad!
 
 Yes... But what makes up all the amazing pages we know and love? **HTML**.
 
@@ -16,9 +13,6 @@ Yes... But what makes up all the amazing pages we know and love? **HTML**.
 
 There are so many different tags in **HTML** that dictate what will be on a user's screen. However, if you've ever seen a website that is pure HTML...
 
-> ![Pure HTML](./purehtml.png)
->
-> Beauty in simplicity?
 
 It's pretty spartan. We can make our pages more interesting and visually appealing by styling them! Guess what, there's a language for that too! It's called **CSS**.
 
