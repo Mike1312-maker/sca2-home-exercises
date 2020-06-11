@@ -49,3 +49,66 @@ li a:hover.nav {
 hr {
   width:1000px;
 }
+
+#counter {
+  color: #dae1e7;
+  margin:auto;
+  font:50px "Hind", sans-serif;
+  padding:30px
+}
+
+#events {
+  font: 50px "Hind", sans-serif;
+  color:#dae1e7;
+  padding:50px
+}
+
+#button {
+	background: #27496d;
+	border-radius: 0.2em;
+	color: #dae1e7;
+	cursor: pointer;
+	margin: auto;
+	padding: 50px 100px;
+	transition: background .15s linear, color .15s linear;
+  font: 50px "Hind", sans-serif;
+}
+
+#button:hover {
+	background: #203f5e;
+}
+
+#button:focus {
+	outline: transparent;
+}
+
+#button:active {
+	transform: translateY(0.1em);
+}
+
+#game {
+  border: 0;
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+  background: #00263b;
+	height: 100vh;
+	overflow: hidden;
+  text-align:center;
+}
+
+.mini_img {
+  width:75px; 
+  height:75px;
+}
+
+.link {
+  text-decoration: none;
+   color: #D0CCD0;
+}
+
+#contact {
+  text-align: center;
+  font-weight: bold;
+  
+}
